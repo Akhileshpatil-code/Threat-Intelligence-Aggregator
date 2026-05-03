@@ -78,7 +78,7 @@ class ThreatIntelligenceAggregator:
 
         for indicator, data in self.ioc_database.items():
             # Only block Medium and High severity to prevent false positives
-            if data['severity'] in ['Low', 'Medium''High']:
+            if data['severity'] in ['Medium''High']:
                 if data['type'] == 'ip':
                     ip_blocklist.append(indicator)
                 elif data['type'] == 'sha256':
