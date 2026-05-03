@@ -1,37 +1,27 @@
-# Threat-Intelligence-Aggregator
+# 🔍 Threat Intelligence Aggregator
 
-A Python-based Threat Intelligence Aggregator that collects, parses, normalizes, and correlates Indicators of Compromise (IOCs) from multiple OSINT feeds.
+A Python-based tool to collect, parse, and correlate Indicators of Compromise (IOCs) from multiple OSINT threat feeds.
 
 ---
 
 ## 🚀 Features
-
-- Collects threat intelligence from public feeds
-- Extracts:
-  - IP addresses
-  - SHA256 hashes
-  - URLs
-- Correlates indicators across multiple sources
-- Assigns severity levels:
-  - Low
-  - Medium
-  - High
+- Extracts IPs, URLs, SHA256 hashes
+- Correlates indicators across multiple feeds
+- Assigns severity (Low, Medium, High)
 - Generates:
-  - Firewall blocklist (IPs)
-  - EDR blocklist (Hashes)
-  - JSON intelligence report
+  - Firewall blocklist
+  - EDR hash blocklist
+  - JSON report
 
 ---
 
 ## 📊 Data Sources
-
 - FeodoTracker
 - URLhaus
 - Emerging Threats
 
 ---
 
-## 🛠️ Installation
-
+## ▶️ Usage
 ```bash
-pip install requests
+python ti_aggregator.py
